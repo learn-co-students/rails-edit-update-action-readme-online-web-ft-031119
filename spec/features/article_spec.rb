@@ -33,7 +33,7 @@ describe 'form' do
     expect(page).to have_content("My article title")
   end
 
-  it 'shows an edit form that submits content and redirects and prints out params' do
+  xit 'shows an edit form that submits content and redirects and prints out params' do
     @article = Article.create(title: "My Article", description: "My article desc")
 
     visit edit_article_path(@article)
